@@ -1,0 +1,45 @@
+{
+  "name": "image-labeling-bot",
+  "version": "1.0.0",
+  "description": "A simple Telegram bot for image labeling using Google Cloud Vision API.",
+  "type": "module",
+  "engines": {
+    "node": "17.x"
+  },
+  "scripts": {
+    "start": "node build/app.js",
+    "dev": "nodemon",
+    "build": "babel ./src -d build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/bryanbarrios/image-labeling-bot.git"
+  },
+  "keywords": [
+    "javascript",
+    "node",
+    "telegraf",
+    "telegram-bot",
+    "image-labeling",
+    "cloud-vision-api"
+  ],
+  "author": "Bryan Barrios <bryansbarrios@outlook.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bryanbarrios/image-labeling-bot/issues"
+  },
+  "homepage": "https://github.com/bryanbarrios/image-labeling-bot#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.16.0",
+    "@babel/core": "^7.16.0",
+    "@babel/node": "^7.16.0",
+    "@babel/preset-env": "^7.16.0",
+    "nodemon": "^2.0.14"
+  },
+  "dependencies": {
+    "@google-cloud/vision": "^2.4.0",
+    "dotenv": "^10.0.0",
+    "node-fetch": "^3.0.0",
+    "telegraf": "^4.4.2"
+  }
+}
